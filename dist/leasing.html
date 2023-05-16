@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+	<link
+		rel="apple-touch-icon"
+		sizes="180x180"
+		href="img/favicons/apple-touch-icon.png"
+	/>
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="32x32"
+		href="img/favicons/favicon-32x32.png"
+	/>
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="16x16"
+		href="img/favicons/favicon-16x16.png"
+	/>
+	<link
+		rel="mask-icon"
+		href="img/favicons/safari-pinned-tab.svg"
+		color="#5bbad5"
+	/>
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" />
+	<meta name="msapplication-TileColor" content="#2b5797" />
+	<meta name="theme-color" content="#fdfeff" />
+
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+	/>
+
+	<link rel="stylesheet" href="css/style.min.css" />
+	<title>Сервер в лизинг | Первый Дата-Центр</title>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="header__container container">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="img/logotypes/dark-logo.svg" alt="Логотип сайта"/>
+      </a>
+    </div>
+    <div class="header__mobile-icon">
+      <span></span>
+    </div>
+    <div class="header__desktop-menu">
+      <nav class="header__menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="menu__item menu__item--sub">
+            <a>Услуги</a>
+            <span class="menu-arrow"></span>
+            <ul class="submenu__list">
+              <li class="submenu__item">
+                <a href="rent.html">Аренда сервера</a>
+              </li>
+              <li class="submenu__item">
+                <a href="colocation.html">Размещение сервера</a>
+              </li>
+              <li class="submenu__item">
+                <a href="leasing.html">Лизинг сервера</a>
+              </li>
+              <li class="submenu__item">
+                <a href="administration.html">Администрирование и сервис</a>
+              </li>
+              <li class="submenu__item">
+                <a href="repair.html">Ремонт оборудования</a>
+              </li>
+              <li class="submenu__item">
+                <a href="supply.html">Поставка серверного оборудования</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="about.html">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <div class="contacts__phone">
+          <a href="tel:88005054534">8 (800) 505-45-34</a>
+        </div>
+        <div class="contacts__social">
+          <a href="https://t.me/Im_Server " title="Напишите нам в Telegram">
+            <img class="ico" src="img/icons/social_media/ico-tg.svg" alt="Иконка месседжера телеграм"/>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=+79080888002&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D1%83%D1%8E%21%20%D1%83%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%21"
+            title="Напишите нам в Whatsapp">
+            <img class="ico" src="img/icons/social_media/ico-wa.svg" alt="Иконка месседжера ватсап"/>
+          </a>
+          <a href="viber://add?number=79080888002" title="Напишите нам в Viber">
+            <img class="ico" src="img/icons/social_media/ico-viber.svg" alt="Иконка месседжера вайбер"/>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__mobile-menu">
+      <nav class="header__menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="menu__item menu__item--sub-mobile">
+            <a>Услуги</a>
+            <span class="menu-arrow"></span>
+            <ul class="submenu__list">
+              <li class="submenu__item">
+                <a href="rent.html">Аренда сервера</a>
+              </li>
+              <li class="submenu__item">
+                <a href="colocation.html">Размещение сервера</a>
+              </li>
+              <li class="submenu__item">
+                <a href="leasing.html">Лизинг сервера</a>
+              </li>
+              <li class="submenu__item">
+                <a href="administration.html">Администрирование и сервис</a>
+              </li>
+              <li class="submenu__item">
+                <a href="repair.html">Ремонт оборудования</a>
+              </li>
+              <li class="submenu__item">
+                <a href="supply.html">Поставка серверного оборудования</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="about.html">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <div class="contacts__phone">
+          <a href="tel:88005054534">8 (800) 505-45-34</a>
+        </div>
+        <div class="contacts__social">
+          <a href="https://t.me/Im_Server " title="Напишите нам в Telegram">
+            <img class="ico" src="img/icons/social_media/ico-tg.svg" alt="Иконка месседжера телеграм"/>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=+79080888002&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D1%83%D1%8E%21%20%D1%83%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%21"
+            title="Напишите нам в Whatsapp">
+            <img class="ico" src="img/icons/social_media/ico-wa.svg" alt="Иконка месседжера ватсап"/>
+          </a>
+          <a href="viber://add?number=79080888002" title="Напишите нам в Viber">
+            <img class="ico" src="img/icons/social_media/ico-viber.svg" alt="Иконка месседжера вайбер"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+      <main class="service-page">
+        <div class="container">
+          
+
+  <div class="service-hero">
+  <div class="hero__body">
+    <h2 class="hero__title">Сервер в лизинг</h2>
+    <p class="hero__subtitle subtitle">Приобретение в собственность серверного оборудования на условиях долгосрочного выкупа</p>
+    <a data-goto=".tariffs" class="hero__button main-button" href="#">
+      Выбрать тариф
+    </a>
+  </div>
+  <div class="hero__image">
+    <img src="img/image/leasing_img.svg" alt="Изображение услуги">
+  </div>
+</div>
+
+  <div class="page__leasing-terms leasing-terms">
+    <h2 class="leasing-terms__title">Условия лизинга</h2>
+    <p class="leasing-terms__text">
+      Оборудование приобретается без первоначального взноса, далее равными ежемесячными
+      платежами оплачивается стоимость оборудования и его размещение в дата-центре.
+    </p>
+    <ul class="leasing-terms__terms-list">
+      <li class="terms-item">Удорожание вашего оборудования не превысит 7,5% в год</li>
+      <li class="terms-item">Вы в праве досрочно погасить полную стоимость оборудования</li>
+      <li class="terms-item">По факту полной выплаты стоимости оборудование переходит в Вашу собственность</li>
+    </ul>
+    <h3>Наши гарантии</h3>
+    <ul class="leasing-terms__guarantees-list">
+      <li class="guarantees-item">Стабильное энергоснабжение</li>
+      <li class="guarantees-item">Высокоскоростное сетевое соединение</li>
+      <li class="guarantees-item">Гарантийное обслуживание и сохранность вашего оборудования</li>
+      <li class="guarantees-item">Оперативная реакция нашего персонала на любые внештатные и аварийные ситуации</li>
+    </ul>
+    <p class="leasing-terms__text">На правах собственника, Вы можете оформить договор на размещение оборудования в нашем дата-центре и продолжить использовать его технические возможности и наши ресурсы для решения своих задач.</p>
+  </div>
+
+  
+
+<section class="tariffs">
+  <h2 class="tariffs__title">Текущие предложения</h2>
+  <p class="tariffs__subtitle subtitle">Готовы предложить условия лизинга и конфигурации под Ваши задачи</p>
+  <div class="tariffs-container">
+        
+    <div class="tariff-card">
+      <div class="tariff-card__parameters">
+        <div class="tariff-card__name"><p>Лизинг</p>Intel Xeon E3-1220</div>
+        <ul class="parameters-list">
+          
+          <li>4 ядра</li>
+          
+          <li>8 GB RAM, DDR3</li>
+          
+          <li>SSD 256GB</li>
+          
+        </ul>
+      </div>
+      <div class="tariff-card__summary">
+        <div class="tariff-card__price">от <span>4935₽</span> / месяц </div>
+        <a href="leasing-config-1.html" class="tariff-card__button main-button">Заказать</a>
+      </div>
+    </div>
+        
+    <div class="tariff-card">
+      <div class="tariff-card__parameters">
+        <div class="tariff-card__name"><p>Лизинг</p>Intel Xeon 2x5620</div>
+        <ul class="parameters-list">
+          
+          <li>8 ядер</li>
+          
+          <li>32GB RAM, DDR3</li>
+          
+          <li>SSD 480GB</li>
+          
+          <li>HDD 300GB</li>
+          
+        </ul>
+      </div>
+      <div class="tariff-card__summary">
+        <div class="tariff-card__price">от <span>6613₽</span> / месяц </div>
+        <a href="leasing-config-2.html" class="tariff-card__button main-button">Заказать</a>
+      </div>
+    </div>
+        
+    <div class="tariff-card">
+      <div class="tariff-card__parameters">
+        <div class="tariff-card__name"><p>Лизинг</p>Intel Xeon E5-2600</div>
+        <ul class="parameters-list">
+          
+          <li>(6)8 ядер</li>
+          
+          <li>32GB RAM, DDR3</li>
+          
+          <li>SSD 256GB</li>
+          
+          <li>HDD 2TB</li>
+          
+        </ul>
+      </div>
+      <div class="tariff-card__summary">
+        <div class="tariff-card__price">от <span>7838₽</span> / месяц </div>
+        <a href="leasing-config-3.html" class="tariff-card__button main-button">Заказать</a>
+      </div>
+    </div>
+        
+    <div class="tariff-card">
+      <div class="tariff-card__parameters">
+        <div class="tariff-card__name"><p>Лизинг</p>Intel Xeon E5-2600</div>
+        <ul class="parameters-list">
+          
+          <li>8 ядер</li>
+          
+          <li>64GB RAM, DDR3</li>
+          
+          <li>2xSSD 256GB</li>
+          
+          <li>HDD 4TB</li>
+          
+        </ul>
+      </div>
+      <div class="tariff-card__summary">
+        <div class="tariff-card__price">от <span>9063₽</span> / месяц </div>
+        <a href="leasing-config-4.html" class="tariff-card__button main-button">Заказать</a>
+      </div>
+    </div>
+        
+    <div class="tariff-card">
+      <div class="tariff-card__parameters">
+        <div class="tariff-card__name"><p>Лизинг</p>Intel Xeon 2xE5-2600v2</div>
+        <ul class="parameters-list">
+          
+          <li>16 ядер</li>
+          
+          <li>128GB RAM, DDR3</li>
+          
+          <li>2xSSD 256GB</li>
+          
+          <li>HDD 4TB</li>
+          
+        </ul>
+      </div>
+      <div class="tariff-card__summary">
+        <div class="tariff-card__price">от <span>13555₽</span> / месяц </div>
+        <a href="leasing-config-5.html" class="tariff-card__button main-button">Заказать</a>
+      </div>
+    </div>
+        
+    <div class="tariff-card">
+      <div class="tariff-card__parameters">
+        <div class="tariff-card__name"><p>Лизинг</p>Intel Xeon 2xE5-2600v2</div>
+        <ul class="parameters-list">
+          
+          <li>20 ядер</li>
+          
+          <li>128GB RAM, DDR3</li>
+          
+          <li>2xSSD 256GB</li>
+          
+          <li>HDD 4TB</li>
+          
+        </ul>
+      </div>
+      <div class="tariff-card__summary">
+        <div class="tariff-card__price">от <span>16150₽</span> / месяц </div>
+        <a href="leasing-config-6.html" class="tariff-card__button main-button">Заказать</a>
+      </div>
+    </div>
+        
+    <div class="tariff-card">
+      <div class="tariff-card__parameters">
+        <div class="tariff-card__name"><p>Лизинг</p>Intel Xeon 2xE5-2600v4</div>
+        <ul class="parameters-list">
+          
+          <li>20 ядер</li>
+          
+          <li>256GB RAM, DDR4</li>
+          
+          <li>2xSSD 512GB</li>
+          
+          <li>HDD 8TB</li>
+          
+        </ul>
+      </div>
+      <div class="tariff-card__summary">
+        <div class="tariff-card__price">от <span>21866₽</span> / месяц </div>
+        <a href="leasing-config-7.html" class="tariff-card__button main-button">Заказать</a>
+      </div>
+    </div>
+        
+    <div class="tariff-card">
+      <div class="tariff-card__parameters">
+        <div class="tariff-card__name"><p>Лизинг</p>Xeon Gold</div>
+        <ul class="parameters-list">
+          
+          <li>20 ядер</li>
+          
+          <li>256 GB RAM, DDR4</li>
+          
+          <li>2xSSD 512GB</li>
+          
+          <li>HDD 8TB</li>
+          
+        </ul>
+      </div>
+      <div class="tariff-card__summary">
+        <div class="tariff-card__price">от <span>25133₽</span> / месяц </div>
+        <a href="leasing-config-8.html" class="tariff-card__button main-button">Заказать</a>
+      </div>
+    </div>
+        
+    <div class="tariff-card">
+      <div class="tariff-card__parameters">
+        <div class="tariff-card__name"><p>Лизинг</p>Xeon Gold</div>
+        <ul class="parameters-list">
+          
+          <li>20 ядер</li>
+          
+          <li>256 GB RAM, DDR4</li>
+          
+          <li>2xSSD 1024GB</li>
+          
+          <li>HDD 8TB</li>
+          
+        </ul>
+      </div>
+      <div class="tariff-card__summary">
+        <div class="tariff-card__price">от <span>34116₽</span> / месяц </div>
+        <a href="leasing-config-9.html" class="tariff-card__button main-button">Заказать</a>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+  
+  
+  <section class="stepper">
+  <div class="stepper__container">
+    <div class="stepper__left">
+      <h2 class="stepper__title">Как приобрести сервер в лизинг в Первом Дата Центре</h2>
+      <p class="stepper__subtitle subtitle">Самый простой путь приобрести сервер в лизинг — обратиться к нам</p>
+      
+    </div>
+    <div class="stepper__right">
+      <ul class="stepper-list">
+        
+          <li class="stepper-item">
+            <div class="stepper-item__text">
+              <strong>Отправьте заявку</strong>
+              <p>Заполните форму с заявкой на аренду сервера, укажите все параметры и отправьте её нам</p>
+            </div>
+          </li>
+        
+          <li class="stepper-item">
+            <div class="stepper-item__text">
+              <strong>Подпишите договор и оплатите счет</strong>
+              <p>Заполним и вышлем договор на согласование</p>
+            </div>
+          </li>
+        
+          <li class="stepper-item">
+            <div class="stepper-item__text">
+              <strong>Сервер в Вашем распоряжении</strong>
+              <p>Получите логин и пароль, используйте все возможности сервера и подключайте дополнительные услуги</p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+        </div>
+      </main>
+      <footer class="page__footer footer">
+  <div class="container">
+    <div class="footer__row">
+      <div class="footer__logo">
+        <a href="index.html">
+          <img src="img/logotypes/vert-dark-logo.svg" alt="logo">
+        </a>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__title">Услуги</h4>
+        <ul class="footer__menu">
+          <li>
+            <a href="rent.html">Аренда сервера</a>
+          </li>
+          <li>
+            <a href="colocation.html">Размещение сервера</a>
+          </li>
+          <li>
+            <a href="leasing.html">Сервер в лизинг</a>
+          </li>
+          <li>
+            <a href="administration.html">Администрирование и сервис</a>
+          </li>
+          <li>
+            <a href="supply.html">Поставка серверного оборудования</a>
+          </li>
+          <li>
+            <a href="repair.html">Ремонт оборудования</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__title">Компания</h4>
+        <ul class="footer__menu">
+          <li>
+            <a href="about.html">О нас</a>
+          </li>
+          <li>
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__title">Контакты</h4>
+        <ul class="footer__contacts">
+          <li>
+            <a href="tel:88005054534">8 (800) 505-45-34</a>
+          </li>
+          <li>
+            <a href="mailto:server@dedic74.ru">server@dedic74.ru</a>
+          </li>
+          <li class="footer__social">
+            <a href="https://t.me/Im_Server" title="Напишите нам в Telegram">
+              <img class="ico" src="img/icons/social_media/ico-tg.svg" alt="Иконка телеграм"/>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=+79080888002&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D1%83%D1%8E%21%20%D1%83%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%21" title="Напишите нам в Whatsapp">
+              <img class="ico" src="img/icons/social_media/ico-wa.svg" alt="Иконка ватсап"/>
+            </a>
+            <a href="viber://add?number=79080888002" title="Напишите нам в Viber">
+              <img class="ico" src="img/icons/social_media/ico-viber.svg" alt="Иконка вайбер"/>
+            </a>
+            <a href="https://vk.com/dedic74" title="Наше сообщество Вконтакте">
+              <img class="ico" src="img/icons/social_media/ico-vk.svg" alt="Иконка вконтакте"/>
+            </a>
+            <a href="https://www.instagram.com/first_datacenter?utm_source=qr" title="Наш Instagram">
+              <img class="ico" src="img/icons/social_media/ico-inst.svg" alt="Иконка инстаграм"/>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <a href="privacy.html" class="privacy-policy">Политика конфиденциальности</a>
+
+      <div class="copyright">
+        © 2023, Первый дата-центр. Все права защищены.
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
+  </body>
+</html>
