@@ -6,8 +6,8 @@ const nodemailer = require("nodemailer");
 
 // const
 const PORT = 5050;
-const MAIL_RECEIVER_ADDRESS = "nenavizhu.leto@gmail.com"
-const MAIL_SENDER_ADDRESS = "dedic-lead@dedic74.ru"
+const MAIL_RECEIVER_ADDRESS = "receiver@gmail.com"
+const MAIL_SENDER_ADDRESS = "sender@gmail.com"
 
 // express init
 const app = express();
