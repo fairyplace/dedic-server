@@ -1,44 +1,54 @@
+// imports
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
-const app = express();
 const nodemailer = require("nodemailer");
+
+// const
 const PORT = 5050;
+const MAIL_RECEIVER_ADDRESS = "nenavizhu.leto@gmail.com"
+const MAIL_SENDER_ADDRESS = "dedic-lead@dedic74.ru"
+
+// express init
+const app = express();
 app.use(express.json());
 app.use(cors());
-// app.use(bodyParser.urlencoded({ extended: false }))
 
+// use /dist to serve static files
 app.use("/", express.static(path.join(__dirname, "dist")));
 
-const sendMail = async (main_info) => {
+const send_mail = async (contact) => {
   let testAccount = await nodemailer.createTestAccount();
   
-  const transport = nodemailer.createTransport({
+  const transporter = nodemailer.createTransport({
     host: "smtp.ethereal.email",
     port: 587,
-    secure: false, // true for 465, false for other ports
-    auth: {
-      user: testAccount.user, // generated ethereal user
-      pass: testAccount.pass, // generated ethereal password
+    secure: false,
+		auth: {
+      user: testAccount.user, 
+      pass: testAccount.pass, 
     },
   }); 
+
+	const info = await transporter.sendMail({
+		from: MAIL_SENDER_ADDRESS,
+		to: MAIL_RECEIVER_ADDRESS,
+		subject: `Новая заявка`,
+		text: `Имя: ${contact.name}\nТелефон: ${contact.phone}\nEmail: ${contact.mail}`
+	});
+
+	return (info.accepted, info);
 }
+
 app.post("/sendMail", (req, res) => {
-	console.log(req.body);
-	let result = true;
+	const contact = req.body;
+	let result, info = send_mail(contact);
 	res.status(result ? 200 : 500).json({
 		result,
-		data: req.body,
+		data: info,
 	});
 });
 
-// app.get('/', (req, res) => {
-//   res.sendFile('./index.html')
-// })
-
-app.get("/sendMail", (req, res) => {
-	res.json();
-});
 app.listen(PORT, () => {
 	console.log(`Server listen ${PORT}`);
 });
